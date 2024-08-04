@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Learn Programming Languages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .language-container {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+        }
+        .language-container:hover {
+            transform: scale(1.05);
+            background-color:pink;
+        }
+        strong {
+            color: #333;
+            font-weight: bold;
+        }
+        p {
+            margin: 0 0 20px;
+            padding: 0;
+        }
+        .main-container {
+            padding: 20px;
+            margin: auto;
+            max-width: 900px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .main-container:hover {
+            transform: scale(1.03);
+            background-color: #f0f9ff;
+        }
+        .intro-text {
+            background-color: #ddeeff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .intro-text:hover {
+            background-color: #ccddee;
+        }
+        /* styles.css */
+.neon-button {
+    text-decoration: none;  /* Removes underline from the link */
+    display: block;  /* Makes the link a block to wrap the button */
+    text-align: center;  /* Centers the button within the link */
+    margin-top: 20px;
+}
+
+.neon-button button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF; /* Initial white text */
+    padding: 12px 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color:slateblue; /* Dark background */
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transitions for all changes */
+    text-transform: uppercase;
+    
+    overflow: hidden; /* Ensures no overflow during scale */
+    cursor: pointer;
+    box-shadow: 0 0 20px #00ff00; /* its itial grow */
+    animation: colorShift 3s infinite alternate;
+}
+
+/* button effects hover effects */
+.neon-button button:hover {
+    transform: scale(1.1); /* Zoom  button effect */
+    box-shadow: 0 0 40px #ff00ff; /* Change glow to a different color of the button  */
+    color: #ff00ff; /* Change text color to match glow on the button */
+}
+
+/* Animation for color  button shift */
+@keyframes colorShift {
+    0%, 100% {
+        box-shadow: 0 0 20px #00ff00; /* Green glow */
+        color: #FFFFFF; /* White text on button */
+    }
+    50% {
+        box-shadow: 0 0 40px blue; /* Pink glow */
+        color: snow; /* Pink text */
+
+    }
+    0% {
+        box-shadow: 0 0 40px red; /* Pink glow */
+        color: snow; /* Pink text */
+        
+    }
+}
+h1 {
+            font-size: 2em; /* Sets the size of the header */
+            text-align: center; /* Centers the header */
+            color: #333; /* Dark grey color for the text */
+            transition: transform 0.3s ease-in-out; /* Smooth transformation for scale */
+            cursor: pointer; /* Changes cursor to pointer to indicate interactivity */
+            position: relative; /* Position relative to use pseudo-elements */
+            animation: blink 1s step-end infinite; /* Blinking animation */
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Scale up effect on hover */
+            color: #0066cc; /* Changes color on hover */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0; /* Text becomes fully transparent */
+            }
+        }
+
+        /* Shimmering effect when cursor is over the text */
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            pointer-events: none;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            background-repeat: no-repeat;
+            animation: shimmer 2s infinite;
+            transition: background 0.5s;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -500px;
+            }
+            100% {
+                background-position: 500px;
+            }
+        }
+         h1 {
+            font-size: 2em; /* Sets the size of the header */
+            text-align: center; /* Centers the header */
+            color: #333; /* Dark grey color for the text */
+            transition: transform 0.3s ease-in-out; /* Smooth transformation for scale */
+            cursor: pointer; /* Changes cursor to pointer to indicate interactivity */
+            position: relative; /* Position relative to use pseudo-elements */
+            animation: blink 1s step-end infinite; /* Blinking animation */
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Scale up effect on hover */
+            color: #0066cc; /* Changes color on hover */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0; /* Text becomes fully transparent */
+            }
+        }
+
+        /* Shimmering effect when cursor is over the text */
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            pointer-events: none;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+            background-repeat: no-repeat;
+            animation: shimmer 2s infinite;
+            transition: background 0.5s;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -500px;
+            }
+            100% {
+                background-position: 500px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <strong><h1>THE CODE CHRONICLES</h1></strong>
+    <div class="main-container">
+        <div class="intro-text">
+            <p>
+                Learning programming languages like <strong>Python</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>C#</strong>, 
+                <strong>TypeScript</strong>, <strong>Go</strong>, <strong>Rust</strong>, <strong>Kotlin</strong>, <strong>SQL</strong>, <strong>HTML</strong>, 
+                <strong>PHP</strong>, <strong>C</strong>, and <strong>C++</strong> equips you with the skills to tackle a wide range of challenges in software development, 
+                data analysis, web development, and more.
+            </p>
+        </div>
+    <div class="language-container">
+        <p><strong>Python:</strong> Renowned for its simplicity and efficiency in data science and machine learning.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>JavaScript:</strong> Indispensable for web development, providing the backbone for dynamic client-side scripts.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>Java:</strong> Offers robust security features, making it ideal for enterprise-level applications.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>C#:</strong> Pivotal in game development and desktop applications through the .NET framework.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>TypeScript:</strong> An extension of JavaScript, introduces type safety, enhancing code quality and maintainability.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>Go:</strong> Favored for its performance in building scalable network servers and concurrent applications.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>Rust:</strong> Offers memory safety without runtime overhead, making it excellent for systems programming.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>Kotlin:</strong> Preferred for Android development due to its seamless integration with Java and improved syntax.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>SQL:</strong> Critical for managing databases efficiently.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>HTML:</strong> The foundation of web content, essential for creating structured web pages.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>PHP:</strong> Widely used for server-side scripting and web development.</p>
+    </div>
+    <div class="language-container">
+        <p><strong>C:</strong> and <strong>C++:</strong> Continue to be the go-to languages for system software, game development, and applications requiring high-performance computing.</p>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid black;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td:hover {
+            transform: scale(1.1);
+            background-color: skyblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programming Languages Popularity (2014 - 2023)</h1>
+    <p>This table shows the popularity of different programming languages over the years based on usage percentage in the software development industry.</p>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Python</th>
+            <th>JavaScript</th>
+            <th>Java</th>
+            <th>C#</th>
+            <th>TypeScript</th>
+            <th>Go</th>
+            <th>Rust</th>
+            <th>Kotlin</th>
+            <th>SQL</th>
+            <th>HTML</th>
+            <th>PHP</th>
+            <th>C</th>
+            <th>C++</th>
+        </tr>
+        <!-- Add rows here for each year's data, I'll add a couple as an example -->
+        <tr>
+            <td>2014</td>
+            <td>20%</td>
+            <td>15%</td>
+            <td>20%</td>
+            <td>10%</td>
+            <td>5%</td>
+            <td>3%</td>
+            <td>2%</td>
+            <td>1%</td>
+            <td>10%</td>
+            <td>5%</td>
+            <td>9%</td>
+            <td>8%</td>
+            <td>6%</td>
+        </tr>
+        <td>2015</td>
+            <td>22%</td>
+            <td>18%</td>
+            <td>20%</td>
+            <td>12%</td>
+            <td>7%</td>
+            <td>4%</td>
+            <td>3%</td>
+            <td>2%</td>
+            <td>11%</td>
+            <td>6%</td>
+            <td>8%</td>
+            <td>9%</td>
+            <td>7%</td>
+        </tr>
+        <tr>
+            <td>2016</td>
+            <td>25%</td>
+            <td>20%</td>
+            <td>21%</td>
+            <td>13%</td>
+            <td>8%</td>
+            <td>5%</td>
+            <td>4%</td>
+            <td>3%</td>
+            <td>12%</td>
+            <td>7%</td>
+            <td>7%</td>
+            <td>10%</td>
+            <td>8%</td>
+        </tr>
+        <tr>
+            <td>2017</td>
+            <td>28%</td>
+            <td>22%</td>
+            <td>22%</td>
+            <td>15%</td>
+            <td>10%</td>
+            <td>6%</td>
+            <td>5%</td>
+            <td>4%</td>
+            <td>13%</td>
+            <td>8%</td>
+            <td>6%</td>
+            <td>11%</td>
+            <td>9%</td>
+        </tr>
+        <tr>
+            <td>2018</td>
+            <td>30%</td>
+            <td>25%</td>
+            <td>24%</td>
+            <td>17%</td>
+            <td>12%</td>
+            <td>7%</td>
+            <td>6%</td>
+            <td>5%</td>
+            <td>14%</td>
+            <td>9%</td>
+            <td>5%</td>
+            <td>12%</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td>35%</td>
+            <td>28%</td>
+            <td>26%</td>
+            <td>18%</td>
+            <td>14%</td>
+            <td>8%</td>
+            <td>7%</td>
+            <td>6%</td>
+            <td>15%</td>
+            <td>10%</td>
+            <td>4%</td>
+            <td>13%</td>
+            <td>11%</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>40%</td>
+            <td>30%</td>
+            <td>28%</td>
+            <td>20%</td>
+            <td>16%</td>
+            <td>9%</td>
+            <td>8%</td>
+            <td>7%</td>
+            <td>16%</td>
+            <td>11%</td>
+            <td>4%</td>
+            <td>14%</td>
+            <td>12%</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>45%</td>
+            <td>32%</td>
+            <td>30%</td>
+            <td>22%</td>
+            <td>18%</td>
+            <td>10%</td>
+            <td>9%</td>
+            <td>8%</td>
+            <td>17%</td>
+            <td>12%</td>
+            <td>3%</td>
+            <td>15%</td>
+            <td>13%</td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>50%</td>
+            <td>35%</td>
+            <td>32%</td>
+            <td>23%</td>
+            <td>20%</td>
+            <td>11%</td>
+            <td>10%</td>
+            <td>9%</td>
+            <td>18%</td>
+            <td>13%</td>
+            <td>3%</td>
+            <td>16%</td>
+            <td>14%</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>55%</td>
+            <td>38%</td>
+            <td>35%</td>
+            <td>25%</td>
+            <td>22%</td>
+            <td>12%</td>
+            <td>11%</td>
+            <td>10%</td>
+            <td>19%</td>
+            <td>14%</td>
+            <td>2%</td>
+            <td>17%</td>
+            <td>15%</td>
+        </tr>
+        
+        <!-- Continue adding other years -->
+    </table>
+</body>
+<h2> MOVING TO THE VISULIZATION PART</h2>
+<a href="index.html" class="neon-button">
+    <button type="button">MOVE TO VISULIZATION PART </button>
+</a>
+</html>

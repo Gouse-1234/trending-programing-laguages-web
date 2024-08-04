@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover, button:focus {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  canvas {
+    width: 100%;
+    max-width: 900px; /* Restrict the size of the canvas for better display */
+    height: 400px;
+    margin: auto;
+    display: block; /* Helps in centering the canvas */
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+h1:hover {
+    color:slateblue; /* Dark Olive Green */
+    transform: scale(1.1);
+}
+h1::before,
+h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background:pink;
+    transition: width 0.5s ease;
+    width: 0;
+}
+h1:hover::before,
+h1:hover::after {
+    width: 100%;
+}  
